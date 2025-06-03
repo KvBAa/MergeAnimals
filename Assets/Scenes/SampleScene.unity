@@ -388,6 +388,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  animalSpawner: {fileID: 1897753971}
 --- !u!4 &582511136
 Transform:
   m_ObjectHideFlags: 0
@@ -701,7 +702,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalPrefab: {fileID: 4293017972727177330, guid: 1248ec7cfe59b994692c57fab3840982, type: 3}
-  mouseAnimalType: {fileID: 11400000, guid: facb91167e1c14449b5097fea0ed52ba, type: 2}
+  animalTypes:
+  - {fileID: 11400000, guid: facb91167e1c14449b5097fea0ed52ba, type: 2}
+  - {fileID: 11400000, guid: b6180daf5b1fa3e438ad3f660257d0e9, type: 2}
+  - {fileID: 11400000, guid: f4bdd570bd6487a4c9a853e177c8a303, type: 2}
   circleCollision: {fileID: 582511135}
 --- !u!4 &1897753972
 Transform:

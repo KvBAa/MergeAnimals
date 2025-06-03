@@ -5,6 +5,7 @@ public class CircleCollision : MonoBehaviour
 {
     [SerializeField] private List<Transform> animalObjects = new List<Transform>();
     [SerializeField] private List<AnimalData> animalDatas = new List<AnimalData>();
+    [SerializeField] private AnimalSpawner animalSpawner;
     void Start()
     {
         
@@ -28,16 +29,23 @@ public class CircleCollision : MonoBehaviour
                     continue;
                 
                 float distance = Vector2.Distance(animalObjects[i].position, animalObjects[j].position);
-                if (distance <= animalDatas[i].GetAnimalType().radius * 2 + 0.01f)
+                if (distance <= animalDatas[i].GetAnimalType().colliderRadius * animalDatas[i].GetAnimalType().localScale * 2 + 0.01f)
                 {
-                    HandleCollision(animalDatas[i], animalDatas[j]);
+                    HandleCollision(animalDatas[i], animalDatas[j], animalDatas[i].GetAnimalType().tier);
                 }
             }
         }
     }
 
-    private void HandleCollision(AnimalData animal1, AnimalData animal2)
+    private void HandleCollision(AnimalData animal1, AnimalData animal2, int tier)
     {
+        animalObjects.Remove(animal1.transform);
+        animalObjects.Remove(animal2.transform);
+        animalDatas.Remove(animal1);
+        animalDatas.Remove(animal2);
+        Destroy(animal1.gameObject);
+        Destroy(animal2.gameObject);
+        animalSpawner.SpawnAnimal((animal1.transform.position + animal2.transform.position)/2, tier + 1);
         Debug.Log($"Collision detected between {animal1.name} and {animal2.name}");
     }
 
