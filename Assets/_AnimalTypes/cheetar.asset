@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5d63b1c5c26e4e429d6d09fec218083, type: 3}
-  m_Name: rabbit
+  m_Name: cheetar
   m_EditorClassIdentifier: 
-  tier: 1
+  tier: 4
   enviroment: land
-  colliderRadius: 1.96
-  localScale: 0.2
+  colliderRadius: 1.18
+  localScale: 0.7
   colliderOffsetX: 0.04
   colliderOffsetY: -0.15
-  animalSprite: {fileID: 2461494178703245914, guid: 6f185bb3e2a430e49b05331c6db38bad, type: 3}
+  animalSprite: {fileID: -4181804718005506109, guid: c3cfa07a4b0f3a04cbdf1bcdea483bf9, type: 3}

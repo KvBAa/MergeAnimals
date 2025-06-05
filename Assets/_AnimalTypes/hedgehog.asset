@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d63b1c5c26e4e429d6d09fec218083, type: 3}
   m_Name: hedgehog
   m_EditorClassIdentifier: 
-  tier: 1
+  tier: 2
   enviroment: land
   colliderRadius: 1.81
-  localScale: 0.6
+  localScale: 0.3
   colliderOffsetX: 0
   colliderOffsetY: 0.21
   animalSprite: {fileID: -1229748469017489676, guid: 6ea9af6624d398d45b1a362de31caf47, type: 3}
