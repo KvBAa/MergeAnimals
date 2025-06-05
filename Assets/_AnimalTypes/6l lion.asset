@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5d63b1c5c26e4e429d6d09fec218083, type: 3}
-  m_Name: bear
+  m_Name: 6l lion
   m_EditorClassIdentifier: 
   tier: 6
   enviroment: land

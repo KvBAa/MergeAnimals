@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5d63b1c5c26e4e429d6d09fec218083, type: 3}
-  m_Name: land dragon
+  m_Name: 3l fox
   m_EditorClassIdentifier: 
-  tier: 6
+  tier: 3
   enviroment: land
-  colliderRadius: 1.72
+  colliderRadius: 1.56
   localScale: 0.5
-  colliderOffsetX: 0.04
-  colliderOffsetY: -0.15
-  animalSprite: {fileID: -2789372148620144043, guid: fde4c4cf46fde634998015bf6862a59d, type: 3}
+  colliderOffsetX: 0.03
+  colliderOffsetY: -0.1
+  animalSprite: {fileID: -2995851263600629512, guid: 3e04a0a518d335748b2b566a99a40556, type: 3}

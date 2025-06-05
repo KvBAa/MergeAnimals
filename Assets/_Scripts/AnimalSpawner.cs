@@ -44,6 +44,8 @@ public class AnimalSpawner : MonoBehaviour
         animal.GetComponent<SpriteRenderer>().sprite = animalTypes[tier].animalSprite;
         animal.transform.localScale = new Vector3(animalTypes[tier].localScale, animalTypes[tier].localScale, 1f);
         circleCollision.AddAnimal(animal.transform, animal.GetComponent<AnimalData>(), tier);
+        //take animalTypes[tier].name after first space and add (Tier X) to it
+        animal.name = animalTypes[tier].name.Substring(animalTypes[tier].name.IndexOf(' ') + 1) + " (Tier " + (tier + 1) + ")";
     }
 
     public int GetAnimalCount()
@@ -57,7 +59,7 @@ public class AnimalSpawner : MonoBehaviour
         {
             yield return new WaitForSeconds(.1f);
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            SpawnNewAnimal(mousePosition, 0);
+            SpawnNewAnimal(new Vector2(0,0), 0);
         }
         
     }
