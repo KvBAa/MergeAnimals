@@ -18,4 +18,10 @@ MonoBehaviour:
   localScale: 0.2
   colliderOffsetX: 0
   colliderOffsetY: 0
-  animalSprite: {fileID: -577424395597845523, guid: 729517ad4a0d11042a9ad946ef5c6418, type: 3}
+  eyeCenterPositions:
+  - {x: -0.522, y: -1.226}
+  - {x: 0.391, y: -1.226}
+  eyeEdgePositions:
+  - {x: -0.522, y: -1.743}
+  - {x: 0.391, y: -1.743}
+  animalSprite: {fileID: -577424395597845523, guid: fb82ff2d186b52e40b6ffb3061b9fd4d, type: 3}

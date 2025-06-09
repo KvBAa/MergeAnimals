@@ -10,5 +10,8 @@ public class AnimalType : ScriptableObject
     public float colliderOffsetX = 0;
     public float colliderOffsetY = 0;
 
+    public Vector2[] eyeCenterPositions;
+    public Vector2[] eyeEdgePositions;
+
     public Sprite animalSprite;
 }

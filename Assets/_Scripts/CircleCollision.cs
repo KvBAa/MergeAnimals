@@ -38,6 +38,7 @@ public class CircleCollision : MonoBehaviour
 
     private void CheckCollisions()
     {
+        return; // Disable collision checking for now, uncomment to enable
         for (int i = 0; i < animalObjectsAndDatas.Count; i++ /*every animal tier*/)
         {
             for (int j = 0; j < animalObjectsAndDatas[i].Count; j++ /*every animal in tier*/)
@@ -75,6 +76,7 @@ public class CircleCollision : MonoBehaviour
         if (tier == animalSpawner.GetAnimalCount() - 1) return;
         animalObjectsAndDatas[animal1.GetAnimalType().tier].Remove(new Pair<Transform, AnimalData>(animal1.transform, animal1));
         animalObjectsAndDatas[animal2.GetAnimalType().tier].Remove(new Pair<Transform, AnimalData>(animal2.transform, animal2));
+
         //animalObjects.Remove(animal1.transform);
         //animalObjects.Remove(animal2.transform);
         //animalDatas.Remove(animal1);

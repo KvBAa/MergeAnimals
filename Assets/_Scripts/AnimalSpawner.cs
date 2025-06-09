@@ -11,7 +11,7 @@ public class AnimalSpawner : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(autoSpawn());
+        //StartCoroutine(autoSpawn());
     }
 
     void Update()
@@ -46,6 +46,7 @@ public class AnimalSpawner : MonoBehaviour
         circleCollision.AddAnimal(animal.transform, animal.GetComponent<AnimalData>(), tier);
         //take animalTypes[tier].name after first space and add (Tier X) to it
         animal.name = animalTypes[tier].name.Substring(animalTypes[tier].name.IndexOf(' ') + 1) + " (Tier " + (tier + 1) + ")";
+        animal.AddComponent<DynamicEyes>();
     }
 
     public int GetAnimalCount()
@@ -55,6 +56,7 @@ public class AnimalSpawner : MonoBehaviour
 
     IEnumerator autoSpawn()
     {
+        
         while (true)
         {
             yield return new WaitForSeconds(.1f);

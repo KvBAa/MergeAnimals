@@ -18,4 +18,4 @@ MonoBehaviour:
   localScale: 0.5
   colliderOffsetX: 0.04
   colliderOffsetY: -0.15
-  animalSprite: {fileID: -2789372148620144043, guid: fde4c4cf46fde634998015bf6862a59d, type: 3}
+  animalSprite: {fileID: -6539175404230165180, guid: 7e03ea5aadcd5b64aa4dec9888ef78a4, type: 3}

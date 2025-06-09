@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tier: 6
   enviroment: land
-  colliderRadius: 1.72
-  localScale: 0.5
+  colliderRadius: 1.84
+  localScale: 0.6
   colliderOffsetX: 0.04
-  colliderOffsetY: -0.15
-  animalSprite: {fileID: -2789372148620144043, guid: fde4c4cf46fde634998015bf6862a59d, type: 3}
+  colliderOffsetY: -0.03
+  animalSprite: {fileID: 828519216474757951, guid: a1c532f4ee9a5d043a0cdf3efc6d8a0b, type: 3}
